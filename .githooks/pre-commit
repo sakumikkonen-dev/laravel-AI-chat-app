@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+./vendor/bin/pint
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+  echo "Pint failed." >&2
+  exit 1
+fi
+
+./vendor/bin/phpstan analyse --memory-limit=256M
+RESULT=$?
+if [ $RESULT -ne 0 ]; then
+  echo "PHPStan failed." >&2
+  exit 1
+fi
+
+exit 0
+
+
+

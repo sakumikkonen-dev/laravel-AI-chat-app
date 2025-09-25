@@ -1,0 +1,20 @@
+parameters:
+  level: 6
+  paths:
+    - app
+  ignoreErrors:
+    - '#Call to an undefined method Illuminate\\Contracts\\Support\\Arrayable::.*#'
+  memoryLimit: 256M
+
+parameters:
+    level: 6
+    paths:
+        - app
+    ignoreErrors:
+        - '#Call to an undefined method Illuminate\\Support\\Facades\\Http::withHeaders\(\)#'
+        - '#Call to an undefined method Illuminate\\Support\\Facades\\Http::post\(\)#'
+    excludePaths:
+        - vendor
+        - storage
+        - bootstrap/cache
+

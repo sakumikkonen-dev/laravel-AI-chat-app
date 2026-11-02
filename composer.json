@@ -23,7 +23,7 @@
         "friendsofphp/php-cs-fixer": "^3.3",
         "laravel/pint": "^1.25",
         "laravel/sail": "^1.0.1",
-        "mockery/mockery": "^1.4.4",
+        "mockery/mockery": "^1.6.15",
         "nunomaduro/collision": "^5.10",
         "phpstan/phpstan": "^2.1",
         "phpunit/phpunit": "^9.5.10"
